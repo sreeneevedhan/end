@@ -8,13 +8,12 @@ var database;
 
 var form, player, game;
 
-var cars, car1, car2, car3, car4,car1Img,car2Img,car3Img,car4Img,trackImg;
+var cars, car1, car2,car1Img,car2Img,trackImg;
 
 function preload(){
-car1Img=loadImage("images/car1.png");
-car2Img=loadImage("images/car2.png");
-car3Img=loadImage("images/car3.png");
-car4Img=loadImage("images/car4.png");
+car1Img=loadImage("images/car.png");
+car2Img=loadImage("images/car1.png");
+
 trackImg=loadImage("images/track.jpg");
 
 }
@@ -30,7 +29,7 @@ function setup(){
 
 
 function draw(){
-  if(playerCount === 4){
+  if(playerCount === 2){
     game.update(1);
   }
   if(gameState === 1){
